@@ -8,3 +8,4 @@ folder. But it's okay, as soon as you start a new chat Hex will create it's own 
 you have to teach the bot since it is new born and doesn't know anything besides what I added to the Replylog folder.
 
 [Hint: Delete 'Chat\Replylog' folder to reset Hex's memory(whatever YOU taught it.)]
+chat\[Teachbot.bat] can be used to change the contents of Noreplylog folder.
