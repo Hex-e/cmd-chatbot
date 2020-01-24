@@ -69,7 +69,7 @@ title Hex [:credits]
 echo __[0006]_____________________________________
 echo ^<^>.........................................
 echo 			        [credits]
-@echo Version              : Hex v1.0
+@echo Version              : Hex v1.0.0
 @echo Programmed by        : Yogesh Singh Bora
 @echo Github               : github.com/Hex-e
 @echo Email                : mystudyidhere@gmail.com
