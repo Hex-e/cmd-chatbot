@@ -5,7 +5,7 @@ rem ----------------------------------------------------------------------------
 if exist Log\fcolor.txt (
 set /p fcolor=<Log\fcolor.txt
 ) else (
-set fcolor=1
+set fcolor=4
 )
 color 0%fcolor%
 
@@ -16,7 +16,7 @@ if not exist Log\introoff.txt call Files\Intro.bat
 if exist Log\fcolor.txt (
 set /p fcolor=<Log\fcolor.txt
 ) else (
-set fcolor=1
+set fcolor=4
 )
 color 0%fcolor%
 
@@ -69,7 +69,7 @@ title Hex [:credits]
 echo __[0006]_____________________________________
 echo ^<^>.........................................
 echo 			        [credits]
-@echo Version              : Hex v1.0.0
+@echo Version              : Hex v1.0
 @echo Programmed by        : Yogesh Singh Bora
 @echo Github               : github.com/Hex-e
 @echo Email                : mystudyidhere@gmail.com
@@ -248,7 +248,7 @@ timeout 2 >nul
 goto menu
 
 :toggleintro
-color 01
+
 title Hex[:0002]
 cls
 echo __[0002]_____________________________________
@@ -256,10 +256,10 @@ echo ^<127.0.0.1^>................................
 echo.
 if not exist Log\introoff.txt (
 	echo>log\introoff.txt Intro off
-	@echo Intro will be [[97mSKIPPED[34m] next time you open Hex.
+	@echo           Intro will be SKIPPED next time.
 ) else (
 	del Log\introoff.txt
-	@echo Intro will be [[97mPLAYED[34m] next time you open Hex.
+	@echo           Intro will be PLAYED next time.
 )
 echo -----------------------------------------------------
 echo.
@@ -289,3 +289,4 @@ start call chat\teachbot.bat
 goto menu
 
 :exit
+exit
